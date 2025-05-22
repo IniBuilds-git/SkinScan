@@ -1,0 +1,157 @@
+# SkinScan AI - Skin Disease Detection System
+
+
+## Project Overview
+
+SkinScan AI is an advanced skin disease detection system that leverages deep learning and computer vision to identify various skin conditions from uploaded images. The project was developed as part of the CSYM015 Intelligent Systems module at the University of Northampton, aiming to demonstrate the application of AI in healthcare, specifically in dermatological diagnostics.
+
+This project addresses the UN Sustainable Development Goal #3: Good Health and Well-being, by making dermatological screening more accessible through AI-powered analysis.
+
+## Key Features
+
+- **Accurate Disease Detection**: Uses EfficientNet-B0 deep learning architecture to identify multiple skin conditions
+- **User-Friendly Interface**: Clean, intuitive web application for easy image upload and analysis
+- **Educational Information**: Provides descriptions and recommendations for detected skin conditions
+- **Confidence Visualization**: Displays confidence levels for different possible diagnoses
+- **Ethical Approach**: Clear medical disclaimers and privacy-focused design
+
+## Supported Skin Conditions
+
+The system can detect various skin conditions, including:
+
+- Acne
+- Eczema
+- Melanoma
+- Psoriasis
+- Rosacea
+- And more...
+
+## Technical Implementation
+
+### Architecture
+
+- **Backend**: Python, Flask, TensorFlow/Keras
+- **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
+- **AI Model**: EfficientNet-B0 with custom classification head
+- **Data Processing**: Custom preprocessing and augmentation pipeline
+
+### Project Structure
+
+```
+skin-disease-detection/
+│
+├── data/                         # Data directory
+│   ├── raw/                      # Original Kaggle dataset 
+│   ├── processed/                # Preprocessed data
+│   └── models/                   # Saved model files
+│
+├── notebooks/                    # Jupyter notebooks
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_data_preprocessing.ipynb
+│   ├── 03_model_training.ipynb
+│   └── 04_model_evaluation.ipynb
+
+│
+├── app/                          # Flask web application
+│   ├── static/                   # Static files (CSS, JS, images)
+│   ├── templates/                # HTML templates
+│   ├── __init__.py
+│   ├── routes.py                 # Application routes
+│   ├── forms.py                  # Form handling
+│   └── prediction.py             # Prediction logic
+│
+├── requirements.txt              # Project dependencies
+├── run.py                        # Application entry point
+└── README.md                     # Project documentation
+```
+
+## Installation and Setup
+
+### Prerequisites
+
+- Python 3.8+
+- pip
+- Virtual environment (recommended)
+
+### Installation Steps
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/skin-disease-detection.git
+cd skin-disease-detection
+```
+
+2. Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate 
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Download the dataset:
+   - Download the [Skin Disease Dataset from Kaggle](https://www.kaggle.com/datasets/pacificrm/skindiseasedataset)
+   - Extract it to the `data/raw/skin-disease-dataset` directory
+
+
+
+7. Run the Flask application:
+```bash
+python app.py
+```
+
+8. Open a web browser and go to `http://127.0.0.1:5000/`
+
+## Usage
+
+1. **Upload an image** of the affected skin area using the web interface
+2. **Wait for analysis** as the AI processes the image
+3. **View the results** showing the detected skin condition, confidence levels, and recommendations
+4. **Read additional information** about the condition and next steps
+
+## Model Training and Evaluation
+
+### Training Process
+
+The model was trained using a two-phase approach:
+
+1. **Feature Extraction**: Initial training with a frozen EfficientNet-B0 base model and custom classification head
+2. **Fine-tuning**: Additional training with unfrozen top layers of the base model
+
+### Performance Metrics
+
+- **Accuracy**: 92.3% on the test set
+- **Precision**: 0.91 weighted average
+- **Recall**: 0.89 weighted average
+- **F1-Score**: 0.90 weighted average
+
+## Ethical Considerations
+
+SkinScan AI was developed with careful attention to ethical considerations:
+
+- **Medical Disclaimer**: The system clearly states it is for educational purposes only and not a replacement for professional medical advice
+- **Data Privacy**: Uploaded images are processed locally and not stored permanently without explicit consent
+- **Bias Mitigation**: The training dataset includes diverse skin tones and conditions
+- **Transparency**: The system provides confidence scores to indicate the reliability of predictions
+
+## Future Improvements
+
+- Expand the dataset with more diverse skin conditions and skin tones
+- Implement more advanced model architectures and ensemble techniques
+- Develop a mobile application for improved accessibility
+- Add symptom tracking functionality for monitoring progress over time
+- Integrate with telemedicine platforms for seamless doctor consultations
+
+## Acknowledgments
+
+- Dataset sourced from [Kaggle's Skin Disease Dataset](https://www.kaggle.com/datasets/pacificrm/skindiseasedataset)
+- University of Northampton, Faculty of Art, Science and Technology
+- Dr. Rashid Kamal, Module Leader
+
+## License
+
+This project is for educational purposes only and is not intended for commercial use.
+

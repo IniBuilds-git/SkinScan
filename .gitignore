@@ -1,4 +1,5 @@
-"*.pth" 
-"myenv/" 
-"dataset/" 
-"__pycache__/" 
+*.pth 
+myenv/ 
+dataset/ 
+__pycache__/
+g
