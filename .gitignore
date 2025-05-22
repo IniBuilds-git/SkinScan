@@ -1,0 +1,4 @@
+"*.pth" 
+"myenv/" 
+"dataset/" 
+"__pycache__/" 
