@@ -77,8 +77,8 @@ skin-disease-detection/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/skin-disease-detection.git
-cd skin-disease-detection
+git clone https://github.com/IniBuilds-git/SkinScan
+cd SkinScan
 ```
 
 2. Create and activate a virtual environment:
@@ -145,13 +145,5 @@ SkinScan AI was developed with careful attention to ethical considerations:
 - Add symptom tracking functionality for monitoring progress over time
 - Integrate with telemedicine platforms for seamless doctor consultations
 
-## Acknowledgments
 
-- Dataset sourced from [Kaggle's Skin Disease Dataset](https://www.kaggle.com/datasets/pacificrm/skindiseasedataset)
-- University of Northampton, Faculty of Art, Science and Technology
-- Dr. Rashid Kamal, Module Leader
-
-## License
-
-This project is for educational purposes only and is not intended for commercial use.
 
