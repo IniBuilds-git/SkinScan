@@ -39,7 +39,7 @@ def index():
             # Create unique filename to avoid overwriting
             filename = str(uuid.uuid4()) + secure_filename(file.filename)
             
-            # Ensure upload directory exists
+            # Ensures upload directory exists
             os.makedirs(current_app.config['UPLOAD_FOLDER'], exist_ok=True)
             
             # Save the file
