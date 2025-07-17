@@ -1,43 +1,37 @@
-# SkinScan AI - Skin Disease Detection System
+# 🧠 SkinScan AI
 
+**SkinScan AI** is an intelligent skin disease detection system that uses deep learning to analyze skin lesion images and provide quick, explainable predictions. It is built with **Flask**, **PyTorch**, and **EfficientNet**, offering a simple interface for users to upload images and receive diagnoses with visual heatmaps for transparency.
 
-## Project Overview
+---
 
-SkinScan AI is an advanced skin disease detection system that leverages deep learning and computer vision to identify various skin conditions from uploaded images. The project was developed as part of the CSYM015 Intelligent Systems module at the University of Northampton, aiming to demonstrate the application of AI in healthcare, specifically in dermatological diagnostics.
+## 📸 DEMO
 
-This project addresses the UN Sustainable Development Goal #3: Good Health and Well-being, by making dermatological screening more accessible through AI-powered analysis.
+![SkinScan Demo](https://drive.google.com/file/d/1VuKBQxwMBczVSUNL6xjwMhyMYcbUH43h/view?usp=sharing)
 
-## Key Features
+---
 
-- **Accurate Disease Detection**: Uses EfficientNet-B0 deep learning architecture to identify multiple skin conditions
-- **User-Friendly Interface**: Clean, intuitive web application for easy image upload and analysis
-- **Educational Information**: Provides descriptions and recommendations for detected skin conditions
-- **Confidence Visualization**: Displays confidence levels for different possible diagnoses
-- **Ethical Approach**: Clear medical disclaimers and privacy-focused design
+## 🚀 Features
 
-## Supported Skin Conditions
+- ✅ Upload skin lesion images
+- 🔍 Predict dermatological conditions using an EfficientNet-B0 model
+- 🧠 Explain predictions using Grad-CAM heatmaps
+- 📄 Display clinical recommendations per disease
+- 💻 Lightweight Flask application, easy to deploy
 
-The system can detect various skin conditions, including:
+---
 
-- Acne
-- Eczema
-- Melanoma
-- Psoriasis
-- Rosacea
-- And more...
+## 🛠️ Tech Stack
 
-## Technical Implementation
+- **Language**: Python 3.8+
+- **Web Framework**: Flask
+- **Deep Learning**: PyTorch, TorchVision
+- **Model**: EfficientNet-B0 (transfer learning)
+- **Visualization**: Grad-CAM, Matplotlib
+- **Frontend**: HTML/CSS with Jinja2 templates
 
-### Architecture
+---
 
-- **Backend**: Python, Flask, TensorFlow/Keras
-- **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
-- **AI Model**: EfficientNet-B0 with custom classification head
-- **Data Processing**: Custom preprocessing and augmentation pipeline
-
-### Project Structure
-
-```
+## 📂 Project Structure
 skin-disease-detection/
 │
 ├── data/                         # Data directory
@@ -47,9 +41,8 @@ skin-disease-detection/
 │
 ├── notebooks/                    # Jupyter notebooks
 │   ├── 01_data_exploration.ipynb
-│   ├── 02_data_preprocessing.ipynb
-│   ├── 03_model_training.ipynb
-│   └── 04_model_evaluation.ipynb
+│   ├── 02_data_preprocessing and model_training.ipynb
+│   └── 03_model_evaluation.ipynb
 
 │
 ├── app/                          # Flask web application
@@ -94,8 +87,9 @@ pip install -r requirements.txt
 
 4. Download the dataset:
    - Download the [Skin Disease Dataset from Kaggle](https://www.kaggle.com/datasets/pacificrm/skindiseasedataset)
-   - Extract it to the `data/raw/skin-disease-dataset` directory
+   - Extract it to the `data/raw/` directory
 
+5. Run the notebook files step by step from data exploration, to data preprocessing and training, to model evaluation
 
 
 7. Run the Flask application:
