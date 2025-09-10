@@ -1,14 +1,10 @@
 # 🧠 SkinScan AI
-
 **SkinScan AI** is an intelligent skin disease detection system that uses deep learning to analyze skin lesion images and provide quick, explainable predictions. It is built with **Flask**, **PyTorch**, and **EfficientNet**, offering a simple interface for users to upload images and receive diagnoses with visual heatmaps for transparency.
-
----
 
 ## 📸 DEMO
 
 (https://drive.google.com/file/d/1VuKBQxwMBczVSUNL6xjwMhyMYcbUH43h/view?usp=sharing)
 
----
 
 ## 🚀 Features
 
@@ -27,7 +23,7 @@
 - **Deep Learning**: PyTorch, TorchVision
 - **Model**: EfficientNet-B0 (transfer learning)
 - **Visualization**: Grad-CAM, Matplotlib
-- **Frontend**: HTML/CSS 
+- **Frontend**: HTML/CSS
 
 ---
 
@@ -62,7 +58,7 @@ pip install -r requirements.txt
     - Download the [Skin Disease Dataset from Kaggle](https://www.kaggle.com/datasets/pacificrm/skindiseasedataset)
     - Extract it to the `data/raw/` directory
 
-2. Run the notebook files step by step from data exploration, to data preprocessing and training, to model evaluation 
+2. Run the notebook files step by step from data exploration, to data preprocessing and training, to model evaluation
 3. Run the Flask application:
 ```bash
  python app.py
