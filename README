@@ -6,7 +6,7 @@
 
 ## 📸 DEMO
 
-![SkinScan Demo](https://drive.google.com/file/d/1VuKBQxwMBczVSUNL6xjwMhyMYcbUH43h/view?usp=sharing)
+(https://drive.google.com/file/d/1VuKBQxwMBczVSUNL6xjwMhyMYcbUH43h/view?usp=sharing)
 
 ---
 
@@ -27,36 +27,10 @@
 - **Deep Learning**: PyTorch, TorchVision
 - **Model**: EfficientNet-B0 (transfer learning)
 - **Visualization**: Grad-CAM, Matplotlib
-- **Frontend**: HTML/CSS with Jinja2 templates
+- **Frontend**: HTML/CSS 
 
 ---
 
-## 📂 Project Structure
-skin-disease-detection/
-│
-├── data/                         # Data directory
-│   ├── raw/                      # Original Kaggle dataset 
-│   ├── processed/                # Preprocessed data
-│   └── models/                   # Saved model files
-│
-├── notebooks/                    # Jupyter notebooks
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_data_preprocessing and model_training.ipynb
-│   └── 03_model_evaluation.ipynb
-
-│
-├── app/                          # Flask web application
-│   ├── static/                   # Static files (CSS, JS, images)
-│   ├── templates/                # HTML templates
-│   ├── __init__.py
-│   ├── routes.py                 # Application routes
-│   ├── forms.py                  # Form handling
-│   └── prediction.py             # Prediction logic
-│
-├── requirements.txt              # Project dependencies
-├── run.py                        # Application entry point
-└── README.md                     # Project documentation
-```
 
 ## Installation and Setup
 
@@ -70,37 +44,32 @@ skin-disease-detection/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/IniBuilds-git/SkinScan
-cd SkinScan
+ git clone https://github.com/IniBuilds-git/SkinScan
+ cd SkinScan
 ```
 
-2. Create and activate a virtual environment:
+1.Create and activate a virtual environment:
 ```bash
-python -m venv venv
-source venv/bin/activate 
+ python -m venv venv
+ source venv/bin/activate 
 ```
-
-3. Install dependencies:
+1. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Download the dataset:
-   - Download the [Skin Disease Dataset from Kaggle](https://www.kaggle.com/datasets/pacificrm/skindiseasedataset)
-   - Extract it to the `data/raw/` directory
+1. Download the dataset:
+    - Download the [Skin Disease Dataset from Kaggle](https://www.kaggle.com/datasets/pacificrm/skindiseasedataset)
+    - Extract it to the `data/raw/` directory
 
-5. Run the notebook files step by step from data exploration, to data preprocessing and training, to model evaluation
-
-
-7. Run the Flask application:
+2. Run the notebook files step by step from data exploration, to data preprocessing and training, to model evaluation 
+3. Run the Flask application:
 ```bash
-python app.py
+ python app.py
 ```
-
-8. Open a web browser and go to `http://127.0.0.1:5000/`
+1. Open a web browser and go to `http://127.0.0.1:5000/`
 
 ## Usage
-
 1. **Upload an image** of the affected skin area using the web interface
 2. **Wait for analysis** as the AI processes the image
 3. **View the results** showing the detected skin condition, confidence levels, and recommendations
